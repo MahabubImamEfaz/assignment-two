@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header</title>
+    <script
+      src="https://kit.fontawesome.com/1aa86da58e.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+      .body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      .hero-heading {
+        font-weight: 700;
+        font-size: 3.375rem;
+        line-height: 3rem;
+        color: #ffffff;
+        margin-bottom: 1.25rem;
+      }
+
+      .hero-text {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.625rem;
+        color: #ffffff;
+        margin-bottom: 1.875rem;
+        /* padding-left: 6.625rem;
+              margin-bottom: 1.875rem; */
+      }
+
+      .hero-button {
+        background: #dd0000;
+        /* margin-left: 6.625rem;
+              margin-bottom: 3.8125rem; */
+        text-decoration: none;
+        color: white;
+        border: 0.125rem solid;
+        padding: 1em 2em;
+        font-size: 1em;
+        transition: all 0.25s;
+      }
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 8.75rem;
+        margin-right: 8.75rem;
+        margin-top: 3.125rem;
+        background-color: #161616;
+      }
+
+      .column1 {
+        padding-top: 6.9375rem;
+        padding-bottom: 6.9375rem;
+        padding-left: 6.625rem;
+        width: 50%;
+      }
+
+      .column2 {
+        width: 50%;
+      }
+
+      #banner-image {
+        object-fit: contain;
+        width: 500px;
+        margin-bottom: -4px;
+      }
+      @media only screen and (max-width: 688px) {
+        .row {
+          flex-direction: column;
+          /* width: 100%; */
+        }
+
+        /* #banner-image {
+          margin: 0 auto;
+        } */
+      }
+    </style>
+  </head>
+  <body>
+    <section class="row">
+      <div class="column1">
+        <h1 class="hero-heading">
+          The Greatest show <br />
+          on the earth
+        </h1>
+        <p class="hero-text">
+          Contrary to popular belief, Lorem Ipsum is not simply <br />
+          random text. It has roots in a piece of classical Latin literature
+          <br />
+          from 45 BC, making it over 2000 years old.
+        </p>
+        <a class="hero-button" href="">
+          Watch Live <i class="fa-solid fa-arrow-right-long"></i
+        ></a>
+      </div>
+      <div class="column2">
+        <img id="banner-image" src="assets/hero-image.png" alt="" />
+      </div>
+    </section>
+  </body>
+</html>
